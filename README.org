@@ -1,0 +1,17 @@
+#+TITLE: Getting started with Love2d and Fennel using NixOS
+#+AUTHOR: SocratesDz
+
+Steps to getting started:
+
+1. Write a [[./shell.nix][shell.nix]] file with ~love~, ~lua~ and ~fennel~ as dependencies.
+2. Add the ~fennel.lua~ file from the Fennel project as explained [[https://fennel-lang.org/setup#embedding-the-fennel-compiler-in-a-lua-application][here]].
+3. Make a ~main.fnl~ and ~main.lua~ as explained in [[https://sr.ht/~benthor/absolutely-minimal-love2d-fennel/#how-to-the-barest-minimum][this section of this guide]].
+4. Run ~nix-shell~ in the current directory.
+5. Run ~love .~ and see your project run!
+
+** Further improvements
+
+These improvements are intended to be integrated with nix.
+
+*** TODO Fetch the ~fennel.lua~ file from the tarball and copy it in the current directory.
+*** TODO Use a template to automatically create the ~main.lua~ file.
